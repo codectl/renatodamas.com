@@ -6,18 +6,20 @@
     "node": true,
     "es6": true
   },
+  "plugins": ["simple-import-sort"],
   "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended",
     "next",
-    "next/core-web-vitals"
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
   ],
   "rules": {
-    "import/order": ["error", {"newlines-between": "always"}],
-    "prettier/prettier": ["error"],
-    "react/react-in-jsx-scope": ["off"],
-    "react/prop-types": ["error"],
+    "simple-import-sort/imports": ["error"],
+    "simple-import-sort/exports": ["error"],
     "no-unused-vars": ["error"],
-    "react/no-unescaped-entities": ["error"]
+    "prettier/prettier": ["error"],
+    "react/no-unescaped-entities": ["error"],
+    "react/prop-types": ["error"],
+    "react/react-in-jsx-scope": ["off"]
   }
 }
