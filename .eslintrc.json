@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "prettier/prettier": 2,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 2,
+    "no-unused-vars": 2,
+    "react/no-unescaped-entities": 2
+  }
 }
